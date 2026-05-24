@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Radiadores Baja Mex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="LOGO COMPLETO FINAL.svg" alt="Radiadores Baja Mex" class="main-logo-svg" width="180" height="75">
+            </a>
+        </div>
+        
+        <div class="search-container">
+            <form action="/buscar" method="GET">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Búsqueda por descripción o código" name="query">
+            </form>
+        </div>
+
+        <div class="cart-container">
+            <a href="carrito.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+   <main class="hero-section">
+        <h2 class="cta-title">Tu Carrito de Compras</h2>
+        
+        <div id="carrito-vacio" class="intro-text">Tu carrito está vacío actualmente.</div>
+        
+        <div id="contenedor-tabla-carrito" style="display: none;">
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; background: #b5c3cd; text-align: left;">
+                <thead>
+                    <tr style="background-color: #81919d; color: white;">
+                        <th style="padding: 12px; color: white;">Producto</th>
+                        <th style="padding: 12px; color: white;">SKU</th>
+                        <th style="padding: 12px; color: white;">Precio</th>
+                        <th style="padding: 12px; color: white;">Cantidad</th>
+                        <th style="padding: 12px; color: white;">Total</th>
+                        <th style="padding: 12px; color: white;">Acción</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="lista-carrito">
+                    </tbody>
+            </table>
+            
+            <div style="text-align: right; margin-bottom: 30px;">
+                <h3 style="color: #000;">Total a Pagar: <span id="total-precio" style="color: #d32f2f; font-size: 24px; font-weight: bold;">$0.00</span></h3>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+                <a href="tienda.html" class="add-to-cart-btn" style="background-color: #4a5560; color: white; border: none; text-decoration: none;">Seguir Comprando</a>
+                <a href="#" id="btn-vaciar" class="add-to-cart-btn" style="background-color: #d32f2f; color: white; border: none; text-decoration: none;">Vaciar Carrito</a>
+                <a href="#" id="btn-pagar" class="add-to-cart-btn" style="background-color: #2e7d32; color: white; padding: 12px 30px; border: none; text-decoration: none;">Proceder al Pago</a>
+            </div>
+        </div>
+    </main>
+
+    <script src= "carrito de compras.js"></script>
+</body>
+</html>

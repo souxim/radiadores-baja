@@ -1,0 +1,236 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #92a1ad; /* El tono azul grisáceo de fondo */
+    color: #000000;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO PRINCIPAL (HEADER)
+   ========================================================================== */
+.main-header {
+    background-color: #b5c3cd; /* Gris claro de la barra superior */
+    display: flex;
+    justify-content: space-between; /* Alinea Logo a la izq, Buscador al centro, Carrito a la der */
+    align-items: center; /* Los centra verticalmente para que ninguno se suba */
+    padding: 10px 40px;
+    height: 95px; /* Le damos una altura fija para que NADA se mueva hacia arriba o abajo */
+    border-bottom: 1px solid #81919d;
+}
+
+/* Contenedor del Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 250px; /* Le damos un espacio fijo al logo */
+}
+
+/* Tamaño de tu archivo SVG */
+.main-logo-svg {
+    max-height: 75px; 
+    width: auto;      
+    display: block;
+}
+
+/* Contenedor del Buscador */
+.search-container {
+    flex-grow: 1;
+    max-width: 500px;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d1dae0;
+    font-size: 16px;
+    color: #4a5560;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4a5560;
+    font-size: 18px;
+}
+
+/* Contenedor del Carrito */
+.cart-container {
+    width: 250px; /* Mismo espacio que el logo para que el buscador quede perfectamente centrado */
+    display: flex;
+    justify-content: flex-end; /* Lo empuja totalmente a la derecha */
+}
+
+.cart-link {
+    font-size: 28px;
+    color: #1a2229;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   3. BARRA DE NAVEGACIÓN (MENÚ)
+   ========================================================================== */
+.nav-bar {
+    background-color: #d1dae0; 
+    border-bottom: 2px solid #81919d;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background 0.2s;
+}
+
+.nav-bar a:hover, .nav-bar a.active {
+    background-color: #b5c3cd;
+}
+
+/* ==========================================================================
+   4. SECCIÓN PRINCIPAL (HERO) Y PRODUCTOS
+   ========================================================================== */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.cta-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+}
+
+.product-card {
+    background-color: #b5c3cd; 
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.sku {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-image-container {
+    background-color: #ffffff; 
+    padding: 15px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.product-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 44px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    color: #d32f2f; 
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.add-to-cart-btn {
+    display: block;
+    background-color: #92a1ad; 
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #6b7a85;
+    transition: background 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #81919d;
+}
+/* Estilos para el contador del carrito */
+.cart-link {
+    position: relative;
+    display: inline-block;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #d32f2f; /* Rojo llamativo */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    text-align: center;
+}

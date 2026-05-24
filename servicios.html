@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Radiadores Baja Mex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src= "LOGO COMPLETO FINAL.svg" alt="Radiadores Baja Mex" class="main-logo-svg" width="180" height="75">
+            </a>
+        </div>
+        
+       <div class="search-container">
+    <form id="search-form" onsubmit="event.preventDefault();">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" placeholder="Búsqueda por descripción o código">
+    </form>
+</div>
+
+        <div class="cart-container">
+            <a href="carrito.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicios.html" class="active">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main style="max-width: 900px; margin: 40px auto; padding: 20px;">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px;">Nuestros Servicios Especializados</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+            <div style="background-color: #b5c3cd; padding: 25px; text-align: center;">
+                <i class="fas fa-tools" style="font-size: 40px; margin-bottom: 15px; color: #1a2229;"></i>
+                <h3 style="margin-bottom: 10px;">Instalación y Cambio</h3>
+                <p>Contamos con técnicos listos para desmontar tu pieza antigua e instalar tu radiador nuevo de forma rápida y segura.</p>
+            </div>
+
+            <div style="background-color: #b5c3cd; padding: 25px; text-align: center;">
+                <i class="fas fa-shower" style="font-size: 40px; margin-bottom: 15px; color: #1a2229;"></i>
+                <h3 style="margin-bottom: 10px;">Limpieza y Sondeo</h3>
+                <p>Mantenimiento preventivo y correctivo para eliminar impurezas, óxido o sarro que obstruyan el flujo de tu sistema de enfriamiento.</p>
+            </div>
+
+            <div style="background-color: #b5c3cd; padding: 25px; text-align: center;">
+                <i class="fas fa-shield-alt" style="font-size: 40px; margin-bottom: 15px; color: #1a2229;"></i>
+                <h3 style="margin-bottom: 10px;">Pruebas de Presión</h3>
+                <p>Detectamos microfugas y grietas invisibles a simple vista mediante sistemas avanzados de presurización.</p>
+            </div>
+        </div>
+    </main>
+<script src= "carrito de compras.js"></script>
+</body>
+</html>
+</body>
+</html>

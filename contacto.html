@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Radiadores Baja Mex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src= "LOGO COMPLETO FINAL.svg" alt="Radiadores Baja Mex" class="main-logo-svg" width="180" height="75">
+            </a>
+        </div>
+        
+        <div class="search-container">
+    <form id="search-form" onsubmit="event.preventDefault();">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" placeholder="Búsqueda por descripción o código">
+    </form>
+</div>
+
+        <div class="cart-container">
+            <a href="carrito.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main style="max-width: 900px; margin: 40px auto; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <div style="background-color: #b5c3cd; padding: 30px; display: flex; flex-direction: column; justify-content: center;">
+            <h2 style="margin-bottom: 20px;">¡Ponte en contacto!</h2>
+            <p style="margin-bottom: 15px;"><i class="fas fa-phone-alt"></i> <strong>Teléfono:</strong> +52 55 5309 3693</p>
+            <p style="margin-bottom: 15px;"><i class="fas fa-envelope"></i> <strong>Correo:</strong> rabajamex@gmail.com</p>
+            <p style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> <strong>Ubicación:</strong> Tlalnepantla de Baz, Estado de México</p>
+            <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lun a Vie: 8:30 AM - 5:30 PM Sábado: 8:30 AM - 2:00 PM</p>
+        </div>
+
+        <div style="background-color: #b5c3cd; padding: 30px;">
+            <h3 style="margin-bottom: 15px;">Envíanos un mensaje</h3>
+            <form style="display: flex; flex-direction: column; gap: 12px;">
+                <input type="text" placeholder="Tu Nombre" style="padding: 10px; border: none; background-color: #d1dae0; outline: none;">
+                <input type="email" placeholder="Tu Correo Electrónico" style="padding: 10px; border: none; background-color: #d1dae0; outline: none;">
+                <textarea placeholder="¿En qué te podemos ayudar?" rows="5" style="padding: 10px; border: none; background-color: #d1dae0; outline: none; resize: none; font-family: sans-serif;"></textarea>
+                <button type="submit" style="padding: 12px; background-color: #92a1ad; border: none; font-weight: bold; cursor: pointer; border-bottom: 2px solid #6b7a85;">ENVIAR MENSAJE</button>
+            </form>
+        </div>
+    </main>
+<script src= "carrito de compras.js"></script>
+</body>
+</html>
+</body>
+</html>

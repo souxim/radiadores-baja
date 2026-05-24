@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 584.59 188.92">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Bauhaus93, 'Bauhaus 93';
+        font-size: 124.79px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #29235c;
+      }
+
+      .cls-2 {
+        font-family: EdwardianScriptITC, 'Edwardian Script ITC';
+        font-size: 45.59px;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-1" transform="translate(170.4 109.8) scale(.54 1)"><tspan x="0" y="0">RADIADORES</tspan></text>
+    <text/>
+    <text class="cls-2" transform="translate(147.25 163.45) scale(.69 1)"><tspan x="0" y="0">BAJA-MEX SA.A DE C.V.</tspan></text>
+  </g>
+  <image width="1280" height="945" transform="translate(0 15.48) scale(.14 .17)" xlink:href="elefante sin fondo.png"/>
+</svg>

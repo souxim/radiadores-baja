@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Radiadores Baja Mex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src= "LOGO COMPLETO FINAL.svg" alt="Radiadores Baja Mex" class="main-logo-svg"width="180" height="75">
+            </a>
+        </div>
+        
+        <div class="search-container">
+    <form id="search-form" onsubmit="event.preventDefault();">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" placeholder="Búsqueda por descripción o código">
+    </form>
+</div>
+
+        <div class="cart-container">
+            <a href="carrito.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html" class="active">Tienda</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main style="padding: 40px 20px; max-width: 1100px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 28px;">Nuestro Catálogo de Radiadores</h2>
+        
+        <section class="products-grid" style="padding: 0;">
+            <article class="product-card">
+                <span class="sku">SKU: 165780</span>
+                <div class="product-image-container"><img src= "radiador vertical.png" alt="Radiador Chevrolet" width="203" height="231"></div>
+                <h3 class="product-title">RADIADOR CHEVROLET AVEO METALICO</h3>
+                <p class="price">$8,500 + IVA</p>
+                <a href="#" class="add-to-cart-btn">AÑADIR AL CARRITO</a>
+            </article>
+
+            <article class="product-card">
+                <span class="sku">SKU: 165640</span>
+                <div class="product-image-container"><img src="radiador horizontal.png" alt="Radiador Dodge"></div>
+                <h3 class="product-title">RADIADOR DODGE CÓRDOVA</h3>
+                <p class="price">$9,800 + IVA</p>
+                <a href="#" class="add-to-cart-btn">AÑADIR AL CARRITO</a>
+            </article>
+            
+            </section>
+    </main>
+<script src= "carrito de compras.js"></script>
+</body>
+</html>
+</body>
+</html>

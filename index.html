@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiadores Baja Mex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+   <header class="main-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src= "LOGO COMPLETO FINAL.svg" alt="Radiadores Baja Mex" class="main-logo-svg"width="180" height="75">
+            </a>
+        </div>
+        
+        <div class="search-container">
+            <form action="/buscar" method="GET">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Búsqueda por descripción o código" name="query">
+            </form>
+        </div>
+
+        <div class="cart-container">
+            <a href="carrito.html" class="cart-link">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero-section">
+        <img src= "tres radiadores.png" alt="Catálogo de Radiadores" class="hero-image">
+        
+        <p class="intro-text">Somos una empresa de radiadores 100% mexicana con 46 años de experiencia, liderada por mujeres. </p>
+        <p class="intro-text">Fabricamos tu radiador desde cero y también contamos con reparaciones. </p>
+        <h2 class="cta-title">¡Conócenos!</h2>
+    </main>
+
+    <section class="products-grid"></section>
+<script src= "carrito de compras.js"></script>
+</body>
+</html>
+</body>
+</html>
